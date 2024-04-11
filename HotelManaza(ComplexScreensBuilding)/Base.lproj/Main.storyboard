@@ -167,8 +167,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="216"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="wvi-hA-zE2">
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="wvi-hA-zE2">
                                                     <rect key="frame" x="20" y="0.0" width="353" height="216"/>
+                                                    <connections>
+                                                        <action selector="datePickerValueChanged:" destination="o0s-XQ-obC" eventType="valueChanged" id="Ov6-Ni-1m0"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -210,8 +213,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="216"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="zH4-hu-LuB">
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="zH4-hu-LuB">
                                                     <rect key="frame" x="20" y="0.0" width="353" height="216"/>
+                                                    <connections>
+                                                        <action selector="datePickerValueChanged:" destination="o0s-XQ-obC" eventType="valueChanged" id="J8X-XI-6BZ"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -247,6 +253,9 @@
                                                 </label>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="lX3-Yn-fY0">
                                                     <rect key="frame" x="279" y="6" width="94" height="32"/>
+                                                    <connections>
+                                                        <action selector="stepperValueChanged:" destination="o0s-XQ-obC" eventType="valueChanged" id="wVb-vZ-IQB"/>
+                                                    </connections>
                                                 </stepper>
                                             </subviews>
                                             <constraints>
@@ -269,6 +278,9 @@
                                             <subviews>
                                                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="TyT-zU-WZ4">
                                                     <rect key="frame" x="279" y="6" width="94" height="32"/>
+                                                    <connections>
+                                                        <action selector="stepperValueChanged:" destination="o0s-XQ-obC" eventType="valueChanged" id="OBS-KL-37n"/>
+                                                    </connections>
                                                 </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSh-8q-1KQ">
                                                     <rect key="frame" x="20" y="11.666666666666664" width="64" height="21"/>
@@ -319,6 +331,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aMi-oj-tOF">
                                                     <rect key="frame" x="324" y="6.3333333333333321" width="51" height="30.999999999999996"/>
+                                                    <connections>
+                                                        <action selector="wifiSwitchChanged:" destination="o0s-XQ-obC" eventType="valueChanged" id="ytC-42-0eS"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <constraints>
@@ -372,7 +387,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="New Registration" id="Auo-Al-BoG">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="wxd-B6-w4z"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="wxd-B6-w4z">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="o0s-XQ-obC" id="s1U-0H-Zw6"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="K5s-bL-lbi">
                             <connections>
                                 <action selector="doneBarButtonTapped:" destination="o0s-XQ-obC" id="nxR-sp-uCs"/>
@@ -380,14 +399,24 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="checkInDateLabel" destination="sfn-Nw-mol" id="oR4-LV-nPs"/>
+                        <outlet property="checkInDatePicker" destination="wvi-hA-zE2" id="gYG-Lb-9Hg"/>
+                        <outlet property="checkOutDateLabel" destination="I9c-xk-1lC" id="1Wd-dT-XN6"/>
+                        <outlet property="checkOutDatePicker" destination="zH4-hu-LuB" id="Rl5-Qv-vHb"/>
                         <outlet property="emailTextField" destination="BtI-rH-sG3" id="crk-lY-vvW"/>
                         <outlet property="firstNameTextField" destination="hkf-Xo-zW3" id="1lY-Ga-rWA"/>
                         <outlet property="lastNameTextField" destination="S8c-uF-3Np" id="C4h-qb-Mda"/>
+                        <outlet property="numberOfAdultsLabel" destination="Gar-d1-D6c" id="9jo-go-NuT"/>
+                        <outlet property="numberOfAdultsStepper" destination="lX3-Yn-fY0" id="D4g-0V-CWF"/>
+                        <outlet property="numberOfChildrenLabel" destination="pXj-VZ-LR5" id="9JO-J9-3Lf"/>
+                        <outlet property="numberOfChildrenStepper" destination="TyT-zU-WZ4" id="qVe-5m-VVl"/>
+                        <outlet property="roomTypeLabel" destination="rhO-TG-JVz" id="hGe-Hj-pD8"/>
+                        <outlet property="wifiSwitch" destination="aMi-oj-tOF" id="LwL-vZ-yAU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMb-iX-vgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1549" y="896"/>
+            <point key="canvasLocation" x="1548.854961832061" y="895.77464788732402"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jcy-mI-nZE">
