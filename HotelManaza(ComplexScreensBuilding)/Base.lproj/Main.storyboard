@@ -375,7 +375,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="sDy-J9-X3n" kind="show" id="IvB-79-yVI"/>
+                                            <segue destination="sDy-J9-X3n" kind="show" id="TdQ-a0-Rdb"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
