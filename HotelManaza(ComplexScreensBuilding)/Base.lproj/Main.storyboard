@@ -10,7 +10,7 @@
         <!--Registration-->
         <scene sceneID="75Z-bO-bGt">
             <objects>
-                <tableViewController id="Ei2-Qz-Ajl" sceneMemberID="viewController">
+                <tableViewController id="Ei2-Qz-Ajl" customClass="RegistrationTableViewController" customModule="HotelManaza_ComplexScreensBuilding_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="UNN-mb-W9r">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,7 +49,7 @@
                     <navigationItem key="navigationItem" title="Registration" id="wn3-Sm-Jzh">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="jQa-GT-ETb">
                             <connections>
-                                <segue destination="ves-bN-B8p" kind="presentation" id="NpF-vP-WUf"/>
+                                <segue destination="ves-bN-B8p" kind="presentation" id="D0s-GI-2J5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -61,7 +61,7 @@
         <!--New Registration-->
         <scene sceneID="kwe-Jj-ywN">
             <objects>
-                <tableViewController id="o0s-XQ-obC" sceneMemberID="viewController">
+                <tableViewController id="o0s-XQ-obC" customClass="AddRegistrationTableViewController" customModule="HotelManaza_ComplexScreensBuilding_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="GPF-a4-G1e">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,7 +227,7 @@
                             <tableViewSection id="k1N-y4-tmT">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QsQ-zi-0Ga">
-                                        <rect key="frame" x="0.0" y="778.33333206176758" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="778.33333206176769" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QsQ-zi-0Ga" id="lJK-8m-Uvp">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -261,7 +261,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="FOE-ps-G6f">
-                                        <rect key="frame" x="0.0" y="822" width="393" height="44"/>
+                                        <rect key="frame" x="0.0" y="822.00000000000011" width="393" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FOE-ps-G6f" id="IS0-JR-Liu">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
@@ -299,7 +299,7 @@
                             <tableViewSection id="tC3-si-WW0">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vci-cK-7Tn">
-                                        <rect key="frame" x="0.0" y="902" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="902.00000000000011" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vci-cK-7Tn" id="fRy-sr-JFv">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -337,7 +337,7 @@
                             <tableViewSection id="D2X-Bp-Qo7">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Fj4-KE-7JZ" detailTextLabel="rhO-TG-JVz" style="IBUITableViewCellStyleValue1" id="w9v-Cd-D0k">
-                                        <rect key="frame" x="0.0" y="981.66666793823242" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="981.66666793823254" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w9v-Cd-D0k" id="ICa-SX-LJB">
                                             <rect key="frame" x="0.0" y="0.0" width="374.66666666666669" height="43.666667938232422"/>
@@ -371,10 +371,19 @@
                             <outlet property="delegate" destination="o0s-XQ-obC" id="drE-Yd-UID"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Registration" id="Yu0-nJ-56X">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="uOu-R1-jqR"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="RCZ-XL-3Do"/>
+                    <navigationItem key="navigationItem" title="New Registration" id="Auo-Al-BoG">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="wxd-B6-w4z"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="done" id="K5s-bL-lbi">
+                            <connections>
+                                <action selector="doneBarButtonTapped:" destination="o0s-XQ-obC" id="nxR-sp-uCs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="BtI-rH-sG3" id="crk-lY-vvW"/>
+                        <outlet property="firstNameTextField" destination="hkf-Xo-zW3" id="1lY-Ga-rWA"/>
+                        <outlet property="lastNameTextField" destination="S8c-uF-3Np" id="C4h-qb-Mda"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMb-iX-vgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -399,7 +408,7 @@
         <!--Select Room Type-->
         <scene sceneID="mo0-Wt-q9R">
             <objects>
-                <tableViewController id="sDy-J9-X3n" sceneMemberID="viewController">
+                <tableViewController id="sDy-J9-X3n" customClass="SelectRoomTypeTableViewController" customModule="HotelManaza_ComplexScreensBuilding_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="HNw-38-DQN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
